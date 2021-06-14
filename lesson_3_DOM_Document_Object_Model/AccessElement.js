@@ -15,13 +15,12 @@ console.log(headingClass)
 var headingTagName = document.getElementsByTagName('h1')
 console.log(headingTagName)
 
-//querySelector - return element
+//querySelector - return element (class -> '.nameClass', id -> '#idName', card -> 'nameCard')
 //querySelectorAll: return collection
 
 //truong hop co 2 class trung ten nhau, chon ten thu nhat hoac thu hai
 var headingQuery = document.querySelector(' .box .headingclass:nth-child(2)')
 console.log(headingQuery)
-
 //get box + li, tu node box co the access tu box tro di qua thebox variable
 var thebox = document.querySelector('.box')
 var theLi = thebox.querySelectorAll('li')
