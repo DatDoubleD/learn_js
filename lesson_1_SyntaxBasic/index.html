@@ -6,20 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
     <h1 id="heading">HTML DOM</h1>
-    <div class="box">
+    <div onclick="console.log(Math.random())" class="box">
         <h1 class="headingclass">HTML class 1</h1>
-        <h1 class="headingclass">HTML class 2</h1>
+        <h1 id="headingbinoibot" onclick="console.log(Math.random())" class="headingclass">HTML class 2</h1>
         <li>js</li>
         <li>php</li>
         <li>ruby</li>
         <p>p1 ne</p>
         <p>p2 ne</p>
+        <a href="https://www.google.com.vn/?hl=vi">day la the a</a>
     </div>
+    <div class="box2">
+        <input type="text">
+        <input type="checkbox">
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+    <button id="btn">Click me!</button>
+    <ul id="comments-box"></ul>
+    <ul id="comments-box-hai"></ul>
 </body>
-<script src="../lesson_3_DOM_Document_Object_Model/AccessElement.js"></script>
+<script src="../lesson_3_DOM_Document_Object_Model/PromiseExample.js"></script>
 
 </html>

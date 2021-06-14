@@ -1,5 +1,5 @@
 //HTML DOM
-// 1. truy xuat vao cac element
+// 1. ACCESS TO GET ELEMENT
 // co the access through: ID, class, tag, css selector, HTML collection
 
 //getElementById - return element
@@ -28,4 +28,6 @@ var theLi = thebox.querySelectorAll('li')
 var thep = thebox.querySelectorAll('p')
 console.log(theLi)
 console.log(thep)
+
+document.write('hello day la write') // <script> nam o dau thi this line appear there
 
