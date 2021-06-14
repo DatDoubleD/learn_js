@@ -9,8 +9,6 @@
  * 3. set start in package.json ="json-server --watch db.json"
  * 4. npm start
  */
-var listCourseBlock = document.getElementById('list-course')
-console.log(listCourseBlock)
 
 var courseAPI = 'http://localhost:3000/course'
 fetch(courseAPI)
