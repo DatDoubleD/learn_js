@@ -12,11 +12,11 @@
 var listCourseBlock = document.getElementById('list-course')
 console.log(listCourseBlock)
 
-// var courseAPI = 'http://localhost:3000/course'
-// fetch(courseAPI)
-// 	.then(function (response) {
-// 		return response.json()
-// 	})
-// 	.then(function (course) {
-// 		// console.log(course)
-// 	})
+var courseAPI = 'http://localhost:3000/course'
+fetch(courseAPI)
+	.then(function (response) {
+		return response.json()
+	})
+	.then(function (course) {
+		// console.log(course)
+	})
