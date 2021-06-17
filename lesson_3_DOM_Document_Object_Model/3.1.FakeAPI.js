@@ -17,6 +17,7 @@ function start() {
 		renderCourse(courses)
 	})
 	handleCreateForm()
+	handleUpdateCourse()
 }
 start()
 
@@ -90,4 +91,36 @@ function deleteCourse(courseId) {
 			var course = document.querySelector('.course-item-' + courseId)
 			course.remove
 		})
+}
+//PUT
+function updateCourse(courseId, fromData) {
+	var option = {
+		method: 'PUT',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(fromData)
+	}
+	fetch(courseAPI + '/' + courseId, option)
+		.then(function (response) {
+			return response.json()
+		})
+		.then(function (course) {
+			console.log(course)
+		})
+}
+function handleUpdateCourse() {
+	var btnUpdate = document.getElementById('update')
+
+	btnUpdate.onclick = function () {
+		var name = document.querySelector('input[name="name"]').value
+		var description = document.querySelector('input[name="description"]').value
+		var id = document.querySelector('input[name="id"]').value
+
+		var fromData = {
+			name: name,
+			description: description
+		}
+		updateCourse(id, fromData)
+	}
 }

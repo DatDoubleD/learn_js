@@ -78,6 +78,7 @@ var newList = Houses.map(
 		}
 	}
 )
+// arrow function: newList = Houses.map(House => {...})
 console.log(newList)
 
 //reduce: return parameter accumulator
@@ -89,4 +90,5 @@ function levelHandler(accumulator, currentValue, currentIndex, originalArray) {
 	return currentValue.level + accumulator
 }
 var sumOfLevel = Houses.reduce(levelHandler, 0) // 0 is accumulator
+//house.reduce(acc, curr => {...}, 9)
 console.log(sumOfLevel)
